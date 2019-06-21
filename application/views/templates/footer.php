@@ -12,19 +12,19 @@
           <h5>Informations</h5>
           <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
           <ul class="list-unstyled">
-            <li><a href="https://nl-nl.facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://nl-nl.facebook.com" target="_blank" class="text-warning">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank" class="text-warning">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank" class="text-warning">Instagram</a></li>
           </ul>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
           <h5>Site links</h5>
           <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
           <ul class="list-unstyled">
-            <li><a href="<?php echo base_url(); ?>home">Home</a></li>
-            <li><a href="<?php echo base_url(); ?>">Categories</a></li>
-            <li><a href="<?php echo base_url(); ?>">Products</a></li>
-            <li><a href="<?php echo base_url(); ?>">Shopping cart</a></li>
+            <li><a href="<?php echo base_url(); ?>home" class="text-warning">Home</a></li>
+            <li><a href="<?php echo base_url(); ?>" class="text-warning">Categories</a></li>
+            <li><a href="<?php echo base_url(); ?>" class="text-warning">Products</a></li>
+            <li><a href="<?php echo base_url(); ?>" class="text-warning">Shopping cart</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-lg-3 col-xl-3">
