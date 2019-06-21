@@ -38,76 +38,53 @@
             </a>
             <ul class="navbar-nav m-auto">
              <li class="nav-item">
-               <a class="nav-link" href="<?php echo base_url(); ?>">login</a>
+               <a class="nav-link" href="<?php echo base_url(); ?>">Login</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" data-toggle="modal" data-target="#registerModal">register</a>
+               <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
              </li>
             </ul>
           </form>
         </div>
       </div>
     </nav>
-
     <!-- Register Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-xl-9 mx-auto">
-        <div class="card card-signin flex-row my-5">
-          <div class="card-img-left d-none d-md-flex">
-             <!-- Background image for card set in CSS! -->
-          </div>
-          <div class="card-body">
-            <h5 class="card-title text-center">Register</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                <label for="inputUserame">Username</label>
-              </div>
-
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                <label for="inputEmail">Email address</label>
-              </div>
-
-              <hr>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-
-                        <div class="form-label-group">
-                          <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-                          <label for="inputConfirmPassword">Confirm password</label>
-                        </div>
-                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
-                        <a class="d-block text-center mt-2 small" href="#">Sign In</a>
-                      </form>
-                    </div>
-                  </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Register</h5>
+              <form class="form-signin">
+                <div class="form-label-group">
+                  <label for="inputUserame">Username</label>
+                  <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
                 </div>
-              </div>
+                <div class="form-label-group">
+                  <label for="inputEmail">Email address</label>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                </div>
+                <hr>
+                <div class="form-label-group">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-label-group">
+                  <label for="inputConfirmPassword">Confirm password</label>
+                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" data-dismiss="modal" type="submit">Register</button>
+                <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+              </form>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" type="submit" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
-
     <div class="container">
