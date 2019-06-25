@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 25 jun 2019 om 07:20
+-- Gegenereerd op: 25 jun 2019 om 07:27
 -- Serverversie: 5.6.37
 -- PHP-versie: 7.1.8
 
