@@ -6,7 +6,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3">
           <h5>About</h5>
           <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-          <p class="mb-0">Welkom we are a company that works hard so you as a customer can enjoy your games without having to go through a long and difficult installing proces.</p>
+          <p class="mb-0">Welcome we are a company that works hard so you as a customer can enjoy your games without having to go through a long and difficult installing proces.</p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
           <h5>Informations</h5>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 25 jun 2019 om 07:27
+-- Gegenereerd op: 25 jun 2019 om 09:57
 -- Serverversie: 5.6.37
 -- PHP-versie: 7.1.8
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `GameEscape`
+-- Database: `gameescape`
 --
 
 -- --------------------------------------------------------
