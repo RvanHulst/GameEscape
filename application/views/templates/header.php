@@ -42,50 +42,11 @@
                <a class="nav-link" href="<?php echo base_url(); ?>">Login</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
+               <a class="nav-link" href="<?php echo base_url(); ?>register">Register</a>
              </li>
             </ul>
           </form>
         </div>
       </div>
     </nav>
-    <!-- Register Modal -->
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="card-body">
-              <h5 class="card-title text-center">Register</h5>
-              <form class="form-signin">
-                <div class="form-label-group">
-                  <label for="inputUserame">Username</label>
-                  <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                </div>
-                <div class="form-label-group">
-                  <label for="inputEmail">Email address</label>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                </div>
-                <hr>
-                <div class="form-label-group">
-                  <label for="inputPassword">Password</label>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                </div>
-                <div class="form-label-group">
-                  <label for="inputConfirmPassword">Confirm password</label>
-                  <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block text-uppercase" data-dismiss="modal" type="submit">Register</button>
-                <a class="d-block text-center mt-2 small" href="#">Sign In</a>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
+  <div class="container">

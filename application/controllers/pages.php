@@ -11,4 +11,10 @@
       $this->load->view('pages/'.$page, $data);
       $this->load->view('templates/footer');
     }
+
+    public function register(){
+      $this->load->view('templates/header');
+      $this->load->view('pages/register');
+      $this->load->view('templates/footer');
+    }
   }
