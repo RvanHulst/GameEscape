@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 15, 2019 at 02:55 PM
+-- Generation Time: Jul 15, 2019 at 03:10 PM
 -- Server version: 8.0.16
 -- PHP Version: 7.1.8
 
@@ -49,19 +49,9 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `password` varchar(255) NOT NULL,
   `create_date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `create_date`) VALUES
-(5, 'Tim', 'timvaneert@upcmail.nl', '494502d096e760d6e793b79697f9fa80', '2019-06-26'),
-(6, 'Raaf', 'raaf@gmail.com', 'e106a0941e89c0a5867db46ba9d9e6da', '2019-06-26'),
-(11, 'MisterSirr', 'eduardwille1@gmail.com', 'eafa980aa97f95d8b9fc358f28c3307d', '2019-06-28'),
-(12, 'sneakygamer', 'vletter123@gmail.com', '7cfb7ba6e255d164d0328c8a0b53fe5f', '2019-06-28');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
@@ -93,7 +83,7 @@ ALTER TABLE `data_games`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
