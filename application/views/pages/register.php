@@ -26,5 +26,5 @@
   </div>
   <hr>
   <button class="btn btn-lg btn-primary btn-block text-uppercase" name="register">Register</button>
-  <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+  <a class="d-block text-center mt-2 small" href="<?php echo base_url(); ?>login">Sign In</a>
 </form>

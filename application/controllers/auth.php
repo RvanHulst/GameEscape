@@ -4,8 +4,50 @@ class auth extends CI_Controller
 
     public function login()
     {
+      if (isset($_POST['login'])){
 
+        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
+        if ($this->form_validation->run() == TRUE) {
+
+          $username = $_POST["username"];
+          $password = md5($_POST["password"].$username);
+
+          //check user in the database.
+          $this->$db->select('*');
+          $this->$db->from('users');
+          $this->$db->where(array('username' => $username, 'password' => $password));
+          $query = $this->$db->get();
+
+          $user = $query->row();
+          //if user exists.
+          if ($user->email) {
+
+            // temporary massage
+            $this->session->set_flashdata("success", "You have been logged in");
+
+            //set session variables
+
+            $_SESSION['user_logged'] = TRUE;
+            $_SESSION['ussername'] = $user->username;
+            redirect("profile", "refresh");
+          }
+          else {
+            $this->session->set_flashdata("Error", "The password or username doesn't exist");
+            redirect("login", "refresh");
+          }
+        }
+
+        else{
+          $data['errors'] = validation_errors();
+
+          $this->load->view('templates/header');
+          $this->load->view('pages/login', $data);
+          $this->load->view('templates/footer');
+        }
+      }
     }
+
 
     public function register()
     {
@@ -40,7 +82,6 @@ class auth extends CI_Controller
           $this->load->view('templates/header');
           $this->load->view('pages/register', $data);
           $this->load->view('templates/footer');
-
 
         }
       }
