@@ -17,4 +17,16 @@
       $this->load->view('pages/register');
       $this->load->view('templates/footer');
     }
+
+    public function login(){
+      $this->load->view('templates/header');
+      $this->load->view('pages/login');
+      $this->load->view('templates/footer');
+    }
+
+    public function profile(){
+      $this->load->view('templates/header');
+      $this->load->view('pages/profile');
+      $this->load->view('templates/footer');
+    }
   }
